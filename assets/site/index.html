@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Streamflix - demo landing page served by NGINX</title>
+<meta name="description" content="An original Netflix-inspired demo landing page for learning NGINX on AWS EC2.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav" id="nav">
+  <a class="logo" href="#">STREAMFLIX</a>
+  <button class="btn small" id="signin" type="button">Sign In</button>
+</header>
+<section class="hero">
+  <div class="hero-in">
+    <h1>Unlimited movies, shows, and more.</h1>
+    <p>Watch anywhere. Cancel anytime.</p>
+    <p class="sub">Ready to watch? Enter your email to create or restart your membership.</p>
+    <form class="cta" id="cta"><input type="email" id="email" placeholder="Email address" aria-label="Email address"><button class="btn" type="submit">Get Started &rsaquo;</button></form>
+  </div>
+</section>
+<section class="row-sec">
+  <h2>Trending Now</h2>
+  <div class="row-wrap">
+    <button class="arrow l" id="prev" type="button" aria-label="Scroll left">&lsaquo;</button>
+    <div class="row" id="row">
+      <a class="card" href="#"><img src="img/p1.svg" alt="Neon Harbor poster"></a>
+      <a class="card" href="#"><img src="img/p2.svg" alt="The Last Orbit poster"></a>
+      <a class="card" href="#"><img src="img/p3.svg" alt="Paper Moons poster"></a>
+      <a class="card" href="#"><img src="img/p4.svg" alt="Midnight Kitchen poster"></a>
+      <a class="card" href="#"><img src="img/p5.svg" alt="Desert Signal poster"></a>
+      <a class="card" href="#"><img src="img/p6.svg" alt="Glass Garden poster"></a>
+      <a class="card" href="#"><img src="img/p7.svg" alt="Echo Valley poster"></a>
+      <a class="card" href="#"><img src="img/p8.svg" alt="Red Lantern poster"></a>
+    </div>
+    <button class="arrow r" id="next" type="button" aria-label="Scroll right">&rsaquo;</button>
+  </div>
+</section>
+<section class="reasons">
+  <h2>More reasons to join</h2>
+  <div class="cards3">
+    <div class="rc"><h3>Enjoy on your TV</h3><p>Smart TVs, consoles and streaming sticks.</p></div>
+    <div class="rc"><h3>Download your shows</h3><p>Save titles and watch offline.</p></div>
+    <div class="rc"><h3>Watch everywhere</h3><p>Phone, tablet, laptop and TV.</p></div>
+  </div>
+</section>
+<section class="faq">
+  <h2>Frequently Asked Questions</h2>
+  <div class="acc" id="acc">
+    <button class="q" type="button">What is Streamflix?</button><div class="a">An original demo site built to practise hosting a web page with NGINX on AWS EC2.</div>
+    <button class="q" type="button">Who is serving this page?</button><div class="a">NGINX, running on an Amazon Linux 2023 EC2 instance, hands your browser these HTML, CSS, JavaScript and image files.</div>
+    <button class="q" type="button">Is this the real Netflix?</button><div class="a">No. This is an independent learning project and is not affiliated with or endorsed by Netflix.</div>
+  </div>
+</section>
+<footer><p>Streamflix is a demo for learning. Not affiliated with Netflix. All artwork is original. #Buildwithvinit</p></footer>
+<div class="toast" id="toast" role="status"></div>
+<script src="script.js"></script>
+</body>
+</html>
